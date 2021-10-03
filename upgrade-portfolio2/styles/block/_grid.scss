@@ -1,0 +1,26 @@
+@mixin base-grid(
+  $numberColumns,
+  $fractionColumns,
+  $numberRows,
+  $fractionRows,
+  $gap,
+  $height
+) {
+  display: grid;
+  grid-template-columns: repeat($numberColumns, $fractionColumns);
+  grid-template-rows: repeat($numberRows, $fractionRows);
+  gap: $gap;
+  height: $height;
+}
+
+.grid {
+  @include tablet {
+    @include base-grid(1, 1fr, 1, 1fr, 10px, 100px);
+  }
+  @include desktop {
+    @include base-grid(2, 1fr, 2, 1fr, 15px, 200px);
+  }
+  @include large {
+    @include base-grid(3, 1fr, 2, 1fr, 20px, 300px);
+  }
+}
