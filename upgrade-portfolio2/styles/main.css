@@ -95,7 +95,7 @@ nav .navbar .navbar__item a:hover {
 }
 
 main {
-  background-color: #fc9712;
+  background-color: #facb8e;
 }
 
 .hero__container {
@@ -106,7 +106,7 @@ main {
 
 .hero__container h1 {
   padding: 5px;
-  margin-top: 40px;
+  margin-top: 20px;
   font-family: 'Stick No Bills', sans-serif;
   font-weight: bold;
   font-size: 30px;
@@ -218,6 +218,89 @@ main {
   100% {
     margin-left: -300%;
   }
+}
+
+main .price {
+  max-width: 100%;
+  background-color: #e2dddd;
+  border-bottom: 2px solid black;
+  border-top: 2px solid black;
+}
+
+main .price h1 {
+  padding: 5px;
+  margin-left: 2.5%;
+  margin-top: 30px;
+  width: 95%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Stick No Bills', sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  background-color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 5px;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+
+main .price .price__container {
+  width: 60%;
+  margin-left: 20%;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: max-content;
+      grid-template-rows: -webkit-max-content;
+      grid-template-rows: max-content;
+  grid-auto-rows: 50px;
+  grid-area: "price__item1 price__item2 price__item3" "price__item4 price__item5 price__item6" "price__item7 price__item8 price__item9";
+  gap: 0.5rem;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.589) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.589) 0px 5px 15px;
+}
+
+main .price .price__container .time__item {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 4;
+  background: grey;
+  color: orange;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: bold;
+}
+
+main .price .price__container p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: white;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5px;
 }
 
 article,

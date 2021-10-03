@@ -1,0 +1,69 @@
+main {
+   
+    .price {
+        max-width: 100%;
+        background-color:$orange-fourth-color;
+        border-bottom: 2px solid black;
+        border-top:2px solid black;
+
+        h1 {
+            padding: 5px;
+            margin-left: 2.5%;
+            margin-top: 30px;
+            width: 95%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            font-family: 'Stick No Bills', sans-serif;
+            font-weight: bold;
+            font-size: 30px;
+            background-color: $black-transparent-color;
+            margin-bottom: 5px;
+            border-radius: 5px;
+            text-transform: uppercase;
+
+        }
+        
+        .price__container {
+            width: 60%;
+            margin-left: 20%;
+            margin-top: 30px;
+            margin-bottom: 40px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: max-content;
+            grid-auto-rows: 50px;
+            grid-area: 
+            "price__item1 price__item2 price__item3"
+            "price__item4 price__item5 price__item6"
+            "price__item7 price__item8 price__item9";
+            gap: 0.5rem;
+            box-shadow: rgba(0, 0, 0, 0.589) 0px 5px 15px;
+
+    
+            .time__item {
+                grid-column-start:1;
+                grid-column-end: 4;
+                background: grey;
+                color: $orange-primary-color;
+                height: 50px;
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                font-weight: bold;
+    
+            }
+            p {
+                display: flex;
+                background:$black-secondary-color;
+                justify-content: center;
+                align-items: center;
+                gap:5px;
+                
+    
+            }
+        }
+    }
+   
+    
+}    
