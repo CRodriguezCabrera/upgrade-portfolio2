@@ -38,7 +38,7 @@ main {
             "price__item4 price__item5 price__item6"
             "price__item7 price__item8 price__item9";
             gap: 0.5rem;
-            box-shadow: rgba(0, 0, 0, 0.589) 0px 5px 15px;
+            box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
 
     
             .time__item {
@@ -58,6 +58,7 @@ main {
                 background:$black-secondary-color;
                 justify-content: center;
                 align-items: center;
+                text-align: center;
                 gap:5px;
                 
     

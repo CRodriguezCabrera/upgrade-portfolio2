@@ -266,8 +266,8 @@ main .price .price__container {
   grid-auto-rows: 50px;
   grid-area: "price__item1 price__item2 price__item3" "price__item4 price__item5 price__item6" "price__item7 price__item8 price__item9";
   gap: 0.5rem;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.589) 0px 5px 15px;
-          box-shadow: rgba(0, 0, 0, 0.589) 0px 5px 15px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
 }
 
 main .price .price__container .time__item {
@@ -300,7 +300,108 @@ main .price .price__container p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-align: center;
   gap: 5px;
+}
+
+.tournament .tournament__container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.tournament .tournament__container h1 {
+  padding: 5px;
+  margin-left: 1%;
+  margin-top: 30px;
+  width: 95%;
+  font-family: 'Stick No Bills', sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  background-color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 5px;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+
+.tournament .tournament__container .tournament__list {
+  height: 80%;
+}
+
+.tournament .tournament__container .tournament__list img {
+  margin-left: 30%;
+  width: 40%;
+  margin-top: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
+}
+
+.downloads__container {
+  margin-top: 30px;
+  background-image: url("https://i.imgur.com/MvFf0Zv.jpg");
+  background-position: center center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+.downloads__container h1 {
+  padding: 5px;
+  margin-left: 2%;
+  margin-top: 30px;
+  width: 95%;
+  font-family: 'Stick No Bills', sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  background-color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 5px;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+
+.downloads__container img {
+  margin-top: 10%;
+  margin-left: 1%;
+  width: 18%;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 30px;
+  background-color: #5a5a5a;
+  text-align: center;
+}
+
+footer p {
+  font-family: 'Stick No Bills', sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  color: orange;
 }
 
 article,
