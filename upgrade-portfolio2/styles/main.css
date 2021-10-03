@@ -94,10 +94,26 @@ nav .navbar .navbar__item a:hover {
   color: #cc2a01;
 }
 
+main {
+  background-color: #fc9712;
+}
+
 .hero__container {
   width: 95%;
   margin: auto;
   overflow: hidden;
+}
+
+.hero__container h1 {
+  padding: 5px;
+  margin-top: 40px;
+  font-family: 'Stick No Bills', sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  background-color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 5px;
+  border-radius: 5px;
+  text-transform: uppercase;
 }
 
 .hero__container ul {
@@ -105,6 +121,12 @@ nav .navbar .navbar__item a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 400%;
   -webkit-animation: cambio 20s infinite alternate;
           animation: cambio 20s infinite alternate;
@@ -116,12 +138,32 @@ nav .navbar .navbar__item a:hover {
   height: 300px;
 }
 
+@media only screen and (min-width: 768px) {
+  .hero__container ul li {
+    font-weight: 300;
+    font-size: 20;
+    letter-spacing: 0.15;
+    height: 500px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .hero__container ul li {
+    font-weight: 500;
+    font-size: 30;
+    letter-spacing: 0.3;
+    height: 900px;
+  }
+}
+
 .hero__container ul li img {
   width: 100%;
   display: block;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 @-webkit-keyframes cambio {

@@ -1,28 +1,60 @@
+main {
+    background-color:$orange-secondary-color
+}
 .hero__container {
     width: 95%;
     margin: auto;
     overflow: hidden;
     
+
+    h1 {
+        padding: 5px;
+        margin-top:40px;
+        font-family: 'Stick No Bills', sans-serif;
+        font-weight: bold;
+        font-size: 30px;
+        background-color: $black-transparent-color;
+        margin-bottom: 5px;
+        border-radius: 5px;
+        text-transform: uppercase;
+        
+
+    }
+    
+
     ul{
         padding: 0;
         display: flex;
+        justify-content: center;
+        align-items: center;
         width: 400%;
         
+
         animation: cambio 20s infinite alternate;
         
         li{
             list-style: none;
             width: 100%;
             height: 300px;
-            
+            @include tablet {
+                height: 500px;
+        
+            }
+            @include desktop {
+                height: 900px;
+            }
 
             img {
                 width: 100%;
                 display: block;
                 align-items: center;
+                object-fit: cover;
+                
+                
+                }
                 
         
-            }
+            
         }
     }
 
